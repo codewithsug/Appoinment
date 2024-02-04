@@ -12,7 +12,7 @@ include_once 'navbar.php';
 ?>
 
   <div class="content">
-    <h1 style="text-align: center;">Welcome to Admin Dashbord</h1>
+    <h1 style="text-align: center;">Welcome to Sugandha Hospital</h1>
     <div id ="button-view">
         <div class="btn-child">
                 <button class="btn-registration" ><a href="./ragistationform.php">Book Apponment</a></button>

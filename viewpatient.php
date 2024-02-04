@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Appoinment Information</title>
-  <link rel="stylesheet" href="viewstudent.css">
+  <link rel="stylesheet" href="viewpatient.css">
 <script>
     $(window).on("load resize ", function() {
   var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
@@ -18,7 +18,7 @@
 require 'navbar.php';
 ?>
 <section>
-  <!--for demo wrap-->
+  
   <h1>Appoinment Information</h1>
   <div>
     <form action="viewstudent.php" method="post">
@@ -47,6 +47,7 @@ require 'navbar.php';
           <th><b>Phone</b></th>
           <th><b>Appoinment Type</b></th>
           <th><b>Appoinment Date</b></th>
+          <th><b>Action</b></th>
         </tr>
       </thead>
     </table>
@@ -66,6 +67,12 @@ require 'navbar.php';
                     echo '<td>' . $row['phone'] . '</td>';
                     echo '<td>' . $row['appoinment'] . '</td>';
                     echo '<td>' . $row['appoinment_date'] . '</td>';
+                    echo '<td>
+                        <form action="view.php" method="get">
+                        <input type="hidden" name="id" value="'.$row['id'].'">
+                        <input class="view_btn" type="submit" name="submit" value="View">
+                        </form>
+                    </td>';
                     echo '</tr>';
                 }
             } else {
