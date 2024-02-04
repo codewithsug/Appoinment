@@ -21,7 +21,7 @@ require 'navbar.php';
   
   <h1>Appoinment Information</h1>
   <div>
-    <form action="viewstudent.php" method="post">
+    <form action="viewpatient.php" method="post">
       <input type="text" name="phone" required placeholder="Enter phone">
       <input type="submit" name="submit"  value="Search">
     </form>

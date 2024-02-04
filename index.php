@@ -18,7 +18,7 @@ include_once 'navbar.php';
                 <button class="btn-registration" ><a href="./ragistationform.php">Book Apponment</a></button>
         </div>
         <div class="btn-child">
-                <button class="btn-view"><a href="./viewstudent.php">View Apponment</a></button>
+                <button class="btn-view"><a href="viewpatient.php">View Apponment</a></button>
         </div>
     </div>
   </div>
